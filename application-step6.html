@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Application</title>
+        <!-- Le styles -->
+        <link href="style.css" rel="stylesheet" />
+        <link href="css/bootstrap.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js" ></script>
+        <script type="text/javascript" src="js/jquery.js" ></script>
+        <script type="text/javascript" src="js/google-code-prettify/prettify.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-transition.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-alert.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-modal.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-dropdown.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-scrollspy.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-tab.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-tooltip.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-popover.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-button.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-collapse.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-carousel.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-typeahead.js" ></script>
+        <script type="text/javascript" src="js/bootstrap-affix.js" ></script>
+        <script type="text/javascript" src="js/application.js" ></script>
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>
+			// Wait until the DOM has loaded before querying the document
+			$(document).ready(function(){
+				$('ul.tabs-step56').each(function(){
+					// For each set of tabs, we want to keep track of
+					// which tab is active and it's associated content
+					var $active, $content, $links = $(this).find('a');
+
+					// If the location.hash matches one of the links, use that as the active tab.
+					// If no match is found, use the first link as the initial active tab.
+					$active = $($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+					$active.addClass('active');
+					$content = $($active.attr('href'));
+
+					// Hide the remaining content
+					$links.not($active).each(function () {
+						$($(this).attr('href')).hide();
+					});
+
+					// Bind the click event handler
+					$(this).on('click', 'a', function(e){
+						// Make the old tab inactive.
+						$active.removeClass('active');
+						$content.hide();
+
+						// Update the variables with the new link and content
+						$active = $(this);
+						$content = $($(this).attr('href'));
+
+						// Make the tab active.
+						$active.addClass('active');
+						$content.show();
+
+						// Prevent the anchor's default click action
+						e.preventDefault();
+					});
+				});
+			});
+		</script>
+    </head>
+    <body>
+        <div id="total">
+            <div id="header">
+                <div id="logo">
+                    <div>
+                        <input type="image" src="img/logo.png" class="logo"/>
+                        <div class="navbar">
+                            <ul class="nav">
+                                <li><a href="HomePage.html">Home</a></li>
+                                <li class="dropdown">
+										<a href="OurBlog.html" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Our Loans <b class="caret"></b></a>
+											<ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+												<li><a tabindex="-1" href="OurBlog.html">Our History</a></li>
+												<li><a tabindex="-1" href="#">Privacy Information</a></li>
+												<li><a tabindex="-1" href="#">Something else here</a></li>
+												<li class="divider"></li>
+												<li><a tabindex="-1" href="#"><b>NAV HEADER</b></a></li>
+												<li><a tabindex="-1" href="#">Our Directors</a></li>
+												<li><a tabindex="-1" href="#">Separated link</a></li>
+											</ul>
+                                </li>
+                                <li><a href="#">How It Works</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#">Toll Free 1800 002 002</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--end logo-->
+            </div><!--end header-->
+            <div id="banner-about">
+                <div id="banner-items-about">
+                    <img src="img/car.png" alt="" />
+                    <h1>Application Form</h1>
+                    <h4>This is subtext for header. Supporting descriptor</h4>
+                </div>
+            </div><!--end header-->
+            <div id="main-content">
+                <!--write your content-->
+                <div class="wapper-contact">
+                    <div class="label-easy-app">
+                        <h2>4 Easy Steps...</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo</p>
+                        
+                    </div>
+                    <div class="form-app">
+                        <div class="menu-left-app">
+                            <div id="tab">
+                                        <ul class='tabs-step56'>
+                                        	<div id="tab-frame">
+                                            <li><a href='#tab1'><span class="tab-step1"><h3>Thank You</h3></span><span class="tab-description">Your application has been recieved.</span></a></li></br>
+                                            </div>
+                                        </ul>
+                                    </div>
+                        </div>
+                <div id='tab1'>
+                    <div class="form-right-app">
+                            <div class="alert alert-block" style="color:green;margin-top: 42px;">
+                                <h4 style="color:#c09853;">Warning!</h4>
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                       elit, sed do eiusmod tempor incididunt ut labore et
+                                </p>
+                                
+                            </div>
+                            <div class="alert  alert-success">
+                                <h4 style="color:#468847">Suctcess!</h4>
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                       elit, sed do eiusmod tempor incididunt ut labore et
+                                </p>
+                                
+                            </div>                           
+                            <div class="alert alert-error ">
+                                <h4 style="color:#b94a48"> Error! </h4>
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                       elit, sed do eiusmod tempor incididunt ut labore et
+                                </p>
+                                
+                            </div>
+                            <div class="alert alert-info">
+                                <h4 style="color:#3a89ab" >Informatiton - Heads Up! </h4>
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                       elit, sed do eiusmod tempor incididunt ut labore et
+                                </p>
+                                
+                            </div>
+
+
+                    </div>
+				</div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="side-top">
+                    <h5>This is a Well </h5>
+                    <p style="color:#529be7">Lorem ipsum dolor sit amet, consecteturtemp(Open Sans Bold 14px)
+                    </p>
+                    <p>Lorem ipsum dolor 
+                        sit amet, consectetur adipisicing elit, sed 
+                        do eiusmod tempor incididunt ut labore et dolgna aliqua.Open 
+                    </p>
+                    <img src="img/can-stock-photo.png"/>
+
+                </div>
+                <div class="side-bottom">
+                    <h5>Need Assistance</h5>
+                    <h6>Available 24 / 7 </h6>
+                    <h5>1800 002 002</h5>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-main">
+            <div class="footer first">
+                <a href="#"><img src="img/nfsf.png" alt="" /></a>
+                <a href="#"><img src="img/credit.png" alt="" /></a>
+                <a href="#"><img src="img/comodo.png" alt="" /></a>
+            </div><!--end footer-first-->
+            <div class="footer second">
+                <h6>Latest Tweet</h6>
+                <p>Tahsm diciliiliqui cantium diciliqus.</br>Sannihiti dolo dolorei. #LoanMarket #onlineloans</p>
+                <span class="date">Friday 25th October 2012</span>
+            </div><!--end footer-second-->
+            <div class="footer third">
+                <img class="help" src="img/girl.png" src="" />
+                <h6>Need Help ...</h6>
+                <span class="phone">Ph 1800 000 000</span>
+                <div class="social">
+                    <a href="#"><img src="img/icon_fb.png" alt="" /></a>
+                    <a href="#"><img src="img/icon_twitter.png" alt="" /></a>
+                    <a href="#"><img src="img/icon_youtube.png" alt="" /></a>
+                </div><!--end social-->
+            </div><!--end footer-third-->				
+        </div><!--end footer-main-->    
+        <div class="clr"></div>
+        <div>
+            <div id="footer-link">
+                <label class="description-footer">Finance One Pty Ltd  ACN 000 209 000  ABN 02 000 000 000  Copyright 2012   Site by HelloDigital</label>
+                <div class="navbar">
+                    <ul class="nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Brokers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Conttact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!--end footer-->
+</div><!--end wappter-->
+</body>
+
+</html>
