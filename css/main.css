@@ -1,0 +1,144 @@
+/* Header */
+#header {
+	height: 44px;
+	background: #333;
+}
+#header h1 {
+	display: block;
+	background: url(../img/logo.png) no-repeat;
+	width: 209px;
+	height: 30px;
+	text-indent: -9999px;
+	margin: 7px 0 0;
+	float: left;
+}
+
+/* Navigation */
+#navigation {
+	list-style: none;
+	float: left;
+	margin: 10px 0 0 100px;
+}
+#navigation li {
+	display: inline;
+	margin-right: 20px;
+}
+#navigation li a {
+	color: #fff;
+	font-size: 14px;
+}
+#toll {
+	float: right;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 9px;
+}
+
+/* Middle */
+#middle {
+	background: #529be7;
+	min-height: 230px;
+}
+#middle .container {
+	position: relative;
+}
+#middle-title {
+	text-align: center;
+	color: #fff;
+	font-size: 62px;
+	font-weight: 300;
+	margin-top: 35px;
+}
+#middle-title-caption {
+	text-align: center;
+	color: #fff;
+	font-size: 23px;
+	font-weight: normal;
+}
+#homepage-img {
+	width: 553px;
+	height: 503px;
+	margin-top: -90px;
+	margin-bottom: -65px;
+	background: url(../img/background_city.png) no-repeat;
+	position: relative;
+	z-index: 3;
+}
+#car-big {
+	width: 440px;
+	height: 367px;
+	background: url(../img/car_big.png) no-repeat;
+	position: absolute;
+	z-index: 5;
+	bottom: 0;
+	left: 105px;
+	margin-bottom: -65px;
+}
+#signup-container {
+	width: 416px;
+	height: 396px;
+	background: url(../img/signup.png) no-repeat;
+	position: absolute;
+	right: 27px;
+	bottom: 0;
+	margin-bottom: -55px;
+	z-index: 4;
+}
+#signup-form {
+	padding: 0 40px;
+}
+#signup-form h3 {
+	color: #fff;
+}
+#titles {
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 25px;
+}
+#input-container {
+	margin-top: 20px;
+}
+.title-field {
+	vertical-align: middle;
+	margin-right: 10px;
+	float: left;
+	font-size: 14px;
+}
+.title-field input[type="radio"] {
+	margin: 0 5px 3px 0;
+}
+.input-field input[type="text"] {
+	font-size: 13px;
+	padding: 5px 10px;
+	width: 140px;
+	float: left;
+	margin-right: 5px;
+}
+
+#agreement {
+	text-align: center;
+	margin: 15px 0;
+}
+#agreement input[type="checkbox"] {
+	margin: -3px 0 0 0;
+}
+#apply-now {
+	background: url(../img/btn-green.png) no-repeat transparent;
+	width: 261px;
+	height: 69px;
+	border: 0;
+	color: #fff;
+	font-family: "HelveticaNeue", "Open Sans", Arial, Sans-serif;
+	font-size: 26px;
+	margin-left: 40px;
+}
+.more {
+	font-size: 13px;
+	display: block;
+	text-align: center;
+	margin-top: 15px;
+}
+.more a{
+	text-decoration: underline;
+	color: #9d9d9d;
+}
