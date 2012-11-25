@@ -28,11 +28,11 @@ a:hover {
 	float: left;
 	margin: 10px 0 0 100px;
 }
-#navigation li {
+#navigation > li {
 	display: inline;
 	margin-right: 20px;
 }
-#navigation li a {
+#navigation > li > a {
 	color: #fff;
 	font-size: 14px;
 }
@@ -195,6 +195,35 @@ a:hover {
 }
 
 /* Application Form */
+.terms {
+	width: 410px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+.term-header {
+	padding: 5px 15px;
+	background: #f7f7f7;
+	border: 1px solid #ddd;
+}
+.term-content {
+	height: 200px;
+	overflow: auto;
+	width: 400px;
+	padding: 5px;
+}
+.term-content h6 {
+	font-size: 10px;
+	margin: 0 0 5px 0;
+}
+.term-content p {
+	font-size: 10px;
+	line-height: 1;
+}
+#form-5 {
+	width: 350px;
+	margin-left: 30px;
+	text-align: center;
+}
 #application-form {
 	border: 1px solid #e5e5e5;
 	border-radius: 4px;
@@ -261,6 +290,22 @@ a:hover {
 .step-desc p {
 	font-size: 27px;
 	font-weight: 300;
+}
+#round-sq {
+	background: url(../img/round-square.png) no-repeat;
+	width: 238px;
+	height: 193px;
+	margin-left: -10px;
+}
+#round-sq h3 {
+	margin: 0 0 10px 0;
+	line-height: 1;
+	font-size: 27px;
+	font-weight: 300;
+	color:#529BE7;
+}
+#round-sq div {
+	padding: 30px 20px;
 }
 
 /* Content */
@@ -525,4 +570,26 @@ fieldset table tr td:first-child {
 	padding-left: 20px;
 	color: #fff;
 	font-size: 17px;
+}
+.submit-btn-application {
+	background: url(../img/btn-application.png) no-repeat transparent;
+	width: 296px;
+	height: 67px;
+	border: none;
+	text-align: center;
+	color: #fff;
+	font-size: 27px;
+	margin-top: 20px;
+}
+
+/* Bootstrap Element */
+#navigation .dropdown-menu::after {
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid white;
+  border-left: 6px solid transparent;
+  content: '';
 }
